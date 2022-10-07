@@ -1,0 +1,272 @@
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: java; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: java; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: java; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: java; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: java; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: java; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: elephantz; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: zero; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: class; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: salvatorez; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+Client Languages         : en_US, en, ro;
+Parameters of the request: word: zeroe; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
+
+HTTP Method used         : GET
+IP-address of the client : 0:0:0:0:0:0:0:1
+User Agent               : Python-urllib/3.10
+Client Languages         : en_US;
+Parameters of the request: word: elephant; size: 0; 
+----------------------------------------------------------------------------------------------
