@@ -8,17 +8,13 @@ package wordgenerator;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import java.util.Comparator;
-import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import sequencegenerator.ArrangementGenerator;
-import sequencegenerator.WordChecker;
 
 /**
  *
@@ -26,7 +22,6 @@ import sequencegenerator.WordChecker;
  */
 @WebServlet(name = "wordgenerator", urlPatterns = {"/wordGen"})
 public class WordGenerator extends HttpServlet {
-
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -39,45 +34,11 @@ public class WordGenerator extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            
-           /* out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Laboratory1</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h> Hello, Servlet! </h>");*/
-            
-            String word =  request.getParameter("word");
-            int permutationLength = Integer.parseInt(request.getParameter("size"));
-            
-            //out.println(orderLetters(word));
-            
-            ArrangementGenerator a = new ArrangementGenerator(word, permutationLength);
-            Set<String> dictionary = WordChecker.getDictionary("E:\\Facultate\\_Master\\Java_Technologies\\JavaTechnologies\\Laboratory1\\src\\main\\webapp\\dictionary.txt");
-            Set<String> filteredList = WordChecker.filterList(dictionary, a.getWords());
-            
-            out.println(filteredList);
-            
-           /* out.println("</body>");
-            out.println("</html>");*/
-        }
-    }
-    
-    protected String orderLetters(String word){
-        StringBuilder htmlOrderedList = new StringBuilder();
-        char[] letterArray = word.toCharArray();
+        RequestProcesser.offerAnswer(request, response);
         
-        htmlOrderedList.append("<ol>");
-        for(char letter: letterArray){
-            htmlOrderedList.append("<li>" + letter + "</li>");
-        }
-        htmlOrderedList.append("</ol>");
-        
-        return htmlOrderedList.toString();
+        LogWriter outputWriter = new LogWriter(getServletContext());
+        outputWriter.outputRequest(request);
     }
-    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

@@ -15,10 +15,16 @@ public class IntegerList {
         this.list = new ArrayList<>();
     }
     
-    public IntegerList(int end, int newList[]){
+    public IntegerList(int end, int newListOfIndexes[]){
         this.list = new ArrayList<>();
         for(int i = 1; i<=end; i++){
-            this.list.add(newList[i] - 1);
+            this.list.add(newListOfIndexes[i]);
+        }
+    }
+    
+    public void decrement(int value){
+        for(int index = 0; index<this.list.size(); index++){
+            this.list.set(index, this.list.get(index) - value);
         }
     }
     

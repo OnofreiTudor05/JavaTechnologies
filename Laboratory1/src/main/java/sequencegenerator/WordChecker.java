@@ -14,24 +14,22 @@ import java.util.logging.Logger;
  * @author Tudor Onofrei
  */
 public class WordChecker {
-    static String pathToDictionary;
     static Set<String> wordContainer;
     
     static boolean isCreated = false;
     
-    static Set<String> getInstance(){
+    public static Set<String> getInstance(){
         if(!isCreated){
-            wordContainer = getDictionary(pathToDictionary);
+            wordContainer = getDictionary("E:\\Facultate\\_Master\\Java_Technologies\\JavaTechnologies\\Laboratory1\\src\\main\\webapp\\dictionary.txt");
         }
         return wordContainer;
     }
     
-    public static Set<String> getDictionary(String newPathToDictionary){
+    private static Set<String> getDictionary(String newPathToDictionary){
         isCreated = true;
         wordContainer = new HashSet<>();
-        pathToDictionary = newPathToDictionary;
         try{
-            FileReader reader = new FileReader(pathToDictionary);
+            FileReader reader = new FileReader(newPathToDictionary);
             BufferedReader specializedReader = new BufferedReader(reader);
             
             String wordInDictionary = specializedReader.readLine();

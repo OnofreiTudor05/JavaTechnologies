@@ -14,7 +14,6 @@ public class ArrangementGenerator {
     private int solution[];
     private int permutationLength;
     private List<IntegerList> allPermutations;
-    private Set<String> generatedWords;
     private int length;
     private String word;
     
@@ -25,7 +24,6 @@ public class ArrangementGenerator {
         this.solution = new int[this.permutationLength + 2];
         this.allPermutations = new ArrayList<>();
         this.word = newWord;
-        this.generatedWords = new HashSet<>();
         
         if(this.permutationLength == 0){
             for(int currentPermutationLength = 1; currentPermutationLength<=this.length; currentPermutationLength++){
@@ -55,7 +53,9 @@ public class ArrangementGenerator {
     public void generate(int currentPosition){
         int i;
         if(currentPosition > this.permutationLength){
-            this.allPermutations.add(new IntegerList(this.permutationLength, this.solution));
+            IntegerList newSequence = new IntegerList(this.permutationLength, this.solution);
+            newSequence.decrement(1);
+            this.allPermutations.add(newSequence);
         }
         else{
             for(i = 1; i<=this.length; i++){
