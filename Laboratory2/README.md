@@ -1,4 +1,4 @@
-# Laboratory nr. 1
+# Laboratory nr. 2
 
 ## 1. Compulsory
 - Created the input.jsp page
