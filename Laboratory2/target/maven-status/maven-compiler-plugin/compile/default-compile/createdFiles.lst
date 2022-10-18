@@ -1,6 +1,13 @@
-sequencegenerator\IntegerList.class
-wordgenerator\LogWriter.class
+captchagenerator\ImageGenerator.class
 sequencegenerator\ArrangementGenerator.class
+wrappers\ResponseWrapper.class
+captchagenerator\CaptchaGenerator.class
+captchagenerator\RegularPolygon.class
+filters\ResponseDecorator.class
+weblisteners\CategoryListener.class
 wordgenerator\RequestProcesser.class
 wordgenerator\WordGenerator.class
 sequencegenerator\WordChecker.class
+filters\LogPrinter.class
+sequencegenerator\IntegerList.class
+wordgenerator\LogWriter.class

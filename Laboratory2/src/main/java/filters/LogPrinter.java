@@ -3,60 +3,62 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package wordgenerator;
+package filters;
 
-import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.Enumeration;
 import java.util.Locale;
 import java.util.Map;
+import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.ServletContext;
+import java.util.logging.SimpleFormatter;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
+import wordgenerator.WordGenerator;
 
 /**
  *
  * @author Tudor Onofrei
  */
-public class LogWriter {
-    static String logFileName;       // both package level to enable testing
-    static FileWriter logFileWriter;
-    
-    static ServletContext innerContext;
-    
-    public LogWriter(ServletContext servletApplicationContext){
-        this.innerContext = servletApplicationContext;
-        setup();
-    }
-    
-    private static void setup(){
+@WebFilter(filterName = "LogPrinter", urlPatterns = {"/view/wordGen"})
+public class LogPrinter implements Filter {
+    private static Logger logHandler;
+    FileHandler fileHandler;
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
         try{
-            if(logFileName == null){
-                logFileName = "../logs/wordgeneratorlogs.txt";
-                logFileWriter = new FileWriter(logFileName, true);
-            }
+            fileHandler = new FileHandler("logFilter.txt", true);
+            logHandler = Logger.getLogger(WordGenerator.class.getName());
+            logHandler.addHandler(fileHandler);
+            fileHandler.setFormatter(new SimpleFormatter());
         } catch (IOException ex) {
-            Logger.getLogger(LogWriter.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LogPrinter.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SecurityException ex) {
+            Logger.getLogger(LogPrinter.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    public static void outputRequest(HttpServletRequest request){
-        try{
-            if(innerContext != null){
-                logFileWriter.write(extractRequestInfo(request));
-                logFileWriter.flush();
-            }
-            else{
-                logFileWriter.write("\nError\n");
-                logFileWriter.flush();
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(LogWriter.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        
+        logHandler.info(getLogInformation(httpRequest));
+        
+        chain.doFilter(request, response);
     }
     
-    static String extractRequestInfo(HttpServletRequest request){
+    private String getLogInformation(HttpServletRequest request){
         StringBuilder requestInfo = new StringBuilder();
         requestInfo.append("\nHTTP Method used         : ").append(request.getMethod());
         requestInfo.append("\nIP-address of the client : ").append(request.getRemoteAddr());
@@ -85,4 +87,11 @@ public class LogWriter {
         
         return requestInfo.toString();
     }
+
+    @Override
+    public void destroy() {
+    }
+    
+    
+    
 }

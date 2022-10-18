@@ -20,7 +20,7 @@ public class WordChecker {
     
     public static Set<String> getInstance(){
         if(!isCreated){
-            wordContainer = getDictionary("E:\\Facultate\\_Master\\Java_Technologies\\JavaTechnologies\\Laboratory1\\src\\main\\webapp\\dictionary.txt");
+            wordContainer = getDictionary("E:\\Facultate\\_Master\\Java_Technologies\\JavaTechnologies\\Laboratory2\\src\\main\\webapp\\resources\\dictionary.txt");
         }
         return wordContainer;
     }

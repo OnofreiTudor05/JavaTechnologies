@@ -3,9 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package wordgenerator;
+package captchagenerator;
 
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,8 +22,9 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Tudor Onofrei
  */
-@WebServlet(name = "wordgenerator", urlPatterns = {"/view/wordGen"})
-public class WordGenerator extends HttpServlet {
+@WebServlet(name = "CaptchaGenerator", urlPatterns = {"/captchaGen"})
+public class CaptchaGenerator extends HttpServlet {
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -28,19 +35,24 @@ public class WordGenerator extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html; charset=UTF-8");
-        String anglesNumber = request.getParameter("captchaAngles");
-        String angleResponse = (String)request.getSession().getAttribute("angles");
+        throws ServletException, IOException {
         
-        if(angleResponse.equals(anglesNumber)){
-            RequestProcesser.offerAnswer(request, response);
-        }
-        else{
-            System.out.println("Error! Invalid Response!");
-        }
+        ImageGenerator imageG = new ImageGenerator();
+        BufferedImage bufferedImage;
+        bufferedImage = ImageGenerator.getBufferedImage();
         
+        imageG.getGraphics().dispose();
+
+        response.setContentType("image/png");
+        OutputStream os = response.getOutputStream();
+
+        ImageIO.write(bufferedImage, "png", os);
+        os.close();
+        
+        request.getSession().setAttribute("angles", String.valueOf(imageG.getAngleNumber()));
     }
+    
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

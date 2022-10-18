@@ -1,6 +1,14 @@
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\filters\RequestDecorator.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\wrappers\ResponseWrapper.java
 E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\wordgenerator\RequestProcesser.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\filters\ResponseDecorator.java
 E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\wordgenerator\LogWriter.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\filters\LogPrinter.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\captchagenerator\CaptchaGenerator.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\sequencegenerator\ArrangementGenerator.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\captchagenerator\ImageGenerator.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\wordgenerator\WordGenerator.java
 E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\sequencegenerator\IntegerList.java
 E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\sequencegenerator\WordChecker.java
-E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\sequencegenerator\ArrangementGenerator.java
-E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\wordgenerator\WordGenerator.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\weblisteners\CategoryListener.java
+E:\Facultate\_Master\Java_Technologies\JavaTechnologies\Laboratory2\src\main\java\captchagenerator\RegularPolygon.java

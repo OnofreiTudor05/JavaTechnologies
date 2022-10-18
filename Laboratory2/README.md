@@ -5,4 +5,10 @@
 - Implemented the result.jsp page using HttpRequestDispatcher for calling the servlet & JSTL tags for updating the result page
 
 ## 2. Homework
-- Work in progress
+- Added package structure
+- Added prelude and coda filter
+- Added logger filter
+
+## 3. Bonus
+- Added geometric custom CAPTCHA
+- Added web listener for category parameter
