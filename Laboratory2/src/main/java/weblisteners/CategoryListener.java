@@ -21,8 +21,7 @@ public class CategoryListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         ServletContext servletContext = sce.getServletContext();
-        
-        String category = servletContext.getInitParameter("category");
+        String category = servletContext.getInitParameter("initCategory");
         servletContext.setAttribute("initParameter", category);
     }
 

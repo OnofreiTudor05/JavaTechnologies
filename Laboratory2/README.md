@@ -12,3 +12,4 @@
 ## 3. Bonus
 - Added geometric custom CAPTCHA
 - Added web listener for category parameter
+- Added Cookie 

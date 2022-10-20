@@ -11,3 +11,4 @@ sequencegenerator\WordChecker.class
 filters\LogPrinter.class
 sequencegenerator\IntegerList.class
 wordgenerator\LogWriter.class
+redirector\CookieSetter.class

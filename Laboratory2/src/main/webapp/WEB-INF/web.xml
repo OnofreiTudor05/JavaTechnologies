@@ -5,8 +5,8 @@
         <listener-class>weblisteners.CategoryListener</listener-class>
     </listener>
     <context-param>
-        <param-name>category</param-name>
-        <param-value>newCategory</param-value>
+        <param-name>initCategory</param-name>
+        <param-value>DefaultCategory</param-value>
      </context-param>
     <session-config>
         <session-timeout>

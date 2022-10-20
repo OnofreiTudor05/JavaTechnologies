@@ -26,5 +26,6 @@
             </c:forEach>
             
         </table>
+        <!--?= request.getAttribute("categoryParameter") %-->
     </body>
 </html>

@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import sequencegenerator.ArrangementGenerator;
@@ -100,6 +101,17 @@ public class RequestProcesser {
     static void sendListToResultPage(HttpServletRequest request, HttpServletResponse response, Set<String> sequences){
         try{
             request.setAttribute("sequences", sequences);
+            String category = (String) request.getAttribute("categoryParameter");
+            if(category == null || category.isEmpty()){
+                String defaultCategory = (String)request.getServletContext().getAttribute("initParameter");
+                request.setAttribute("categoryParameter", defaultCategory);
+            }
+            
+            Cookie cookie = new Cookie("cookieCategory", (String) request.getAttribute("categoryParameter"));
+            cookie.setMaxAge(60 * 60 * 48);
+            
+            response.addCookie(cookie);
+            
             request.getRequestDispatcher("result.jsp").forward(request, response);
         } catch (ServletException ex) {
             Logger.getLogger(RequestProcesser.class.getName()).log(Level.SEVERE, null, ex);
