@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title> Sport Tournament Teams </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+    </h:body>
+    <f:view>
+            <h:form id="mainForm">
+                <div class="card" id="mainCard">
+                    <p:dataTable var="team" value="#{teamBean.teams}" id="teamList">
+                        <p:column headerText="Id">
+                            <h:outputText value="#{team.id}" />
+                        </p:column>
+
+                        <p:column headerText="Name">
+                            <h:outputText value="#{team.name}" />
+                        </p:column>
+
+                        <p:column headerText="Founding Date">
+                            <h:outputText value="#{team.foundingDate}" />
+                        </p:column>
+
+                        <p:column headerText="City Id">
+                            <h:outputText value="#{team.idCity}" />
+                        </p:column>
+
+
+                    </p:dataTable>
+                </div>
+            </h:form>
+        </f:view>
+    
+</html>
